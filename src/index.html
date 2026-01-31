@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBAC Tech Talks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head> 
+<body>
+     <header class="hero">
+    <div class="container">
+        <img class="hero__logo" src="./images/logotipo.png" alt="EBAC">
+        
+        <h1 class="hero__text" data-aos="fade-down">
+            O maior evento da cultura japonesa no interior de São Paulo
+        </h1>
+
+        <div class="hero__content" style="text-align: center;">
+            <div id="contador" class="hero__countdown" data-aos="zoom-in" data-aos="zoom-in">
+                </div>
+            
+        </div>
+
+        <div class="infos-bar" data-aos="fade-up">
+            <ul class="infos-bar__infos">
+                <li class="infos-bar__infos__item">
+                    <b>Localização</b>
+                    Guaíra-SP ACENB
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Preço entrada</b>
+                    R$ 10,00
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Quando</b>
+                    05/09/2022 às 17horas
+                </li>
+            </ul>
+            <a href="#" class="button button--primary">
+                Garanta seu convite
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas</h2>
+                <p class="event__details__description">
+                    "Explore uma verdadeira viagem gastronômica pelo Japão sem sair da cidade. 
+                    Nossa praça de alimentação conta com dezenas de barracas oferecendo desde os clássicos Yakisoba e Sushi até iguarias tradicionais como Takoyaki, Okonomiyaki e os deliciosos doces de feijão azuki. 
+                    Tudo preparado com ingredientes frescos e o tempero autêntico das famílias da colônia."
+                </p>
+            </div>
+            <img class="event__image" src="./images/comida.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Atrações.</h2>
+                <p class="event__details__description">
+                    "O palco principal é o centro das tradições milenares. 
+                    Prepare-se para uma imersão cultural completa com demonstrações de artes marciais, desfiles de quimonos e as clássicas apresentações de dança folclórica. 
+                    O ponto alto fica para o grupo de Taiko, 
+                    que traz toda a ancestralidade e poder dos tambores para uma performance que emociona gerações."
+                </p>
+            </div>
+            <img class="event__image" src="./images/taiko.jpeg" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right" >
+            <div class="event__details">
+                <h2 class="event__details__title">Cosplayer</h2>
+                <p class="event__details__description">
+                    "Transforme-se no seu herói favorito e suba ao palco! Nosso concurso de cosplay premia a fidelidade, o acabamento das peças e a interpretação dos participantes. Um show à parte que colore o festival e traz a magia dos animes para o mundo real. 
+                    Inscreva-se e faça parte deste espetáculo visual inesquecível."
+                </p>
+            </div>
+            <img class="event__image" src="./images/cosplay.jpeg" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Animes e games</h2>
+                <p class="event__details__description">
+                    "O paraíso dos colecionadores e gamers está aqui! Explore uma grande variedade de produtos licenciados, jogos eletrônicos e itens de decoração inspirados na cultura pop japonesa. 
+                    Uma vitrine completa com tudo o que há de melhor no mundo dos animes, mangás e games para você levar um pedaço do festival para casa."
+                </p>
+            </div>
+            <img class="event__image" src="./images/animes.jpg" alt="Front-end">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Este site foi criado exclusivamente para fins educacionais 
+                como parte de um curso de programação da EBAC @copyright.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

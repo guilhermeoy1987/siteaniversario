@@ -1,0 +1,62 @@
+@use '../variables';
+
+.infos-bar {
+    background-color: variables.$textColor;
+    padding: 24px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 64px auto 0; // O -40px faz ela subir um pouco para cima do Hero, se desejar
+    max-width: 960px;     // Define um limite para a barra não ficar esticada demais
+    // Para dar o efeito de profundidade das imagens, adicione um shadow:
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;          // Garante que o space-between funcione
+    border-radius: 8px;   // Opcional: deixa as bordas arredondadas como na foto
+    position: relative;
+    z-index: 10;
+
+    &__infos {
+        display: flex; 
+        gap: 40px; 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$secondaryTextColor;
+
+            b {
+                display: block; 
+                color: variables.$secondaryTextColor;
+                font-size: 18px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    // Seletor específico para o botão dentro da barra
+    .button {
+        flex-shrink: 0; // Impede o botão de espremer o texto
+        margin-left: 20px; // Espaço mínimo de segurança
+    }
+
+    @media (max-width: 640px) {
+        display: block; 
+        text-align: center; // Centraliza no mobile
+
+        &__infos {
+            display: block; 
+
+            &__item {
+                margin-bottom: 24px; 
+            }
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}

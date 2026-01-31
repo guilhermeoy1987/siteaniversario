@@ -1,0 +1,28 @@
+@use "../variables";
+
+.footer {
+    padding: 32px 0;
+    text-align: center;
+    background-color: variables.$secondaryTextColor; // Usa o preto definido nas variáveis
+    
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    p {
+        color: #000; // Usa o branco definido
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        a {
+            color: variables.$blue1; // Use uma cor que existe (blue1 ou blue2)
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

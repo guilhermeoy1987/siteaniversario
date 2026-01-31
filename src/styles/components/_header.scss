@@ -1,0 +1,13 @@
+@use '../variables'; // Importa suas variáveis de cor se precisar
+
+.header {
+    padding: 24px 0;
+    text-align: center; // Centraliza o logo se ele estiver sozinho
+
+    &__logo {
+        height: 350px; // Aumente este valor para deixar o logo maior
+        width: auto;   // Mantém a proporção sem distorcer
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+}

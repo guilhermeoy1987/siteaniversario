@@ -1,0 +1,84 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+    color: variables.$textColor; 
+    
+    // Container principal com Flexbox
+    .container {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+        gap: 60px; 
+    }
+
+    // MODIFICADORES DE COR (Degradês Verdes Corrigidos)
+     // 2. Modificadores de COR (Degradês)
+    &--frontend {
+        background-image: linear-gradient(variables.$blue1, variables.$blue2);
+    }
+
+    &--ui-ux {
+        background-image: linear-gradient(variables.$blue2, variables.$pink);
+    }
+
+    &--data-science {
+        background-image: linear-gradient(variables.$pink, variables.$yellow);
+    }
+
+    &--backend {
+        background-image: linear-gradient(variables.$yellow, variables.$pink);
+    }
+
+
+    // Modificador de POSIÇÃO
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    // CONFIGURAÇÃO DAS IMAGENS
+    &__image {
+        flex-shrink: 0; 
+        width: 100%;
+        max-width: 450px; 
+        height: 300px;    
+        object-fit: cover; 
+        display: block;
+        border-radius: 15px; 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+    }
+
+    // Detalhes do Texto
+    &__details {
+        flex: 1; 
+
+        &__title {
+            font-size: 32px; 
+            font-weight: 900;
+            margin-bottom: 24px;
+        }
+
+        &__description {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+
+    // Responsividade para Celulares
+    @media (max-width: 768px) {
+        padding: 40px 0;
+
+        .container {
+            flex-direction: column !important; 
+            gap: 32px;
+            text-align: center; 
+        }
+
+        &__image {
+            max-width: 100%; 
+            height: auto;    
+        }
+    }
+}

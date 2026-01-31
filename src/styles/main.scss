@@ -1,0 +1,61 @@
+@use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
+@use 'components/header';
+@use 'components/footer';
+
+
+
+
+*{
+  /* Remove margens e espaçamentos padrão do navegador */
+margin: 0;
+padding: 0;
+
+/* Faz com que padding e border sejam incluídos no tamanho total do elemento */
+box-sizing: border-box;
+
+/* Define a fonte padrão do projeto */
+font-family: Roboto, sans-serif;
+color: variables.$textColor;
+list-style: none;
+}
+
+/* Classe container para centralizar e limitar o conteúdo */
+.container {
+    /* Define largura máxima do container */
+    max-width: 960px;
+
+    /* Faz o container ocupar 100% da largura disponível até o limite máximo */
+    width: 100%;
+
+    /* Centraliza o container horizontalmente */
+    margin: 0 auto;
+
+    /* Estilos para telas pequenas (celulares) */
+    @media (max-width: 640px) {
+        /* Reduz a largura máxima para 80% da tela */
+        max-width: 80%;
+    }
+
+    /* Estilos para telas médias (tablets) */
+    @media (max-width: 1024px) {
+        /* Define largura máxima de 90% da tela */
+        max-width: 90%;
+    }
+}
+
+.footer {
+    padding: 32px 0;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f5f5f5; // Ou a cor que preferir
+    color: #666;
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+}
