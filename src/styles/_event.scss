@@ -1,7 +1,7 @@
 @use 'variables';
 
 .event {
-    padding: 80px 0;
+    padding: 100px 0;
     color: variables.$textColor; 
     
     // Container principal com Flexbox
@@ -9,7 +9,7 @@
         display: flex;
         align-items: center; 
         justify-content: space-between;
-        gap: 60px; 
+        gap: 50px; 
     }
 
     // MODIFICADORES DE COR (Degradês Verdes Corrigidos)
@@ -42,11 +42,11 @@
     &__image {
         flex-shrink: 0; 
         width: 100%;
-        max-width: 450px; 
-        height: 300px;    
+        max-width: 500px; // Aumentei um pouco o tamanho máximo da imagem
+        height: 350px;    // Aumentei a altura para manter a proporção  
         object-fit: cover; 
         display: block;
-        border-radius: 15px; 
+        border-radius: 20px; // Bordas mais arredondadas ficam menos "duras" visualmente 
         box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
     }
 
